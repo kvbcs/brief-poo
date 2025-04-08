@@ -2,6 +2,7 @@ let taskName = document.querySelector("#task-name");
 let taskDesc = document.querySelector("#task-desc");
 let submit = document.querySelector("button");
 let ul = document.querySelector("ul");
+let check = document.querySelectorAll("#check");
 // let newTask = document.querySelectorAll("newTask");
 let id = 0;
 let newTask;
@@ -32,7 +33,10 @@ submit.addEventListener("click", (event) => {
 				false
 			);
 			ul.innerHTML += `<li class="list-group-item d-flex justify-content-between align-items-center">
-            ${newTask.name}, ${newTask.description}, ${newTask.isChecked}
+            <input type="checkbox" id="check"/>
+            <h2>${newTask.name}</h2>
+            <p>${newTask.description}</p>
+            <button id="delete">Supprimer</button>
             </li>`;
 		}
 	} catch (error) {
@@ -40,6 +44,6 @@ submit.addEventListener("click", (event) => {
 	}
 });
 
-newTask.addEventListener("click", () => {
-	console.log(newTask.id);
-});
+// newTask.addEventListener("click", () => {
+// 	console.log(newTask.id);
+// });
