@@ -10,4 +10,4 @@ propriétés:
 logique js: 
 - auto incrément de l'id à l'ajout d'une tâche
 - sélection d'une tâche par son attribut id
-- 
+- # brief-poo
