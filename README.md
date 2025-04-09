@@ -1,6 +1,6 @@
 # brief-poo
 
-![Rendu final](./Rendu.png)
+![Rendu final](./Rendu.PNG)
 
 ## Description 
 Application de Todo List pour ajouter des tâches, les checker et les supprimer.
